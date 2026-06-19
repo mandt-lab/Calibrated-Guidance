@@ -216,3 +216,46 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ── Calibrated-Guidance: large artifacts & experiment outputs ──────────────
+# Checkpoints and datasets are fetched via download scripts, never committed.
+checkpoints/
+**/checkpoints/
+*.pt
+*.pkl
+*.ckpt
+*.safetensors
+data/
+**/data/
+datasets/
+
+# Experiment outputs / caches
+results/
+results_*/
+outputs/
+multirun/
+wandb/
+step_samples/
+*.uvfits
+*.fits
+
+# Vendored third-party clones populated by scripts (not committed)
+third_party/pMF/
+third_party/InverseBench_upstream/
+experiments/super_resolution/pixel_space_inverse_problems/external/
+
+# Keep the paper PDF out of git history
+8586_Calibrated_Test_Time_Guid.pdf
+
+# Slurm logs
+slurm_logs/*
+!slurm_logs/.gitkeep
+slurm-*.out
+
+# Local private cluster config (paths, partition, checkpoints) — never committed
+env.local.sh
+*.local.sh
+
+# SBI benchmark data is small (12MB) and required for reproduction — keep it.
+!experiments/sbi/data/
+!experiments/sbi/data/**
