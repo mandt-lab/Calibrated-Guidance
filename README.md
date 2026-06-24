@@ -1,5 +1,7 @@
 # Calibrated Test-Time Guidance for Bayesian Inference
 
+[Project page](https://dgeyfman.github.io/calibrated-guidance-page/)
+
 Reference implementation and full reproduction code for **Calibrated Test-Time
 Guidance for Bayesian Inference** (Geyfman, Draxler, Groeneveld, Lee, Karaletsos,
 Mandt; ICML 2026).
